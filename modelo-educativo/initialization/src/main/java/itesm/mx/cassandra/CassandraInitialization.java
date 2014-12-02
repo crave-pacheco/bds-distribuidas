@@ -31,8 +31,8 @@ public class CassandraInitialization {
 
             cluster = Cluster.builder().addContactPoints(sites).build();
             Session session = cluster.connect();
-            if (cluster.getMetadata().getKeyspace("medical") == null) {
-//                createKeyspaceAndDbUpdatesTable(session);
+            if (cluster.getMetadata().getKeyspace("programas") == null) {
+                createKeyspaceAndDbUpdatesTable(session);
             }
 
             ResultSet resultSet = session.execute("SELECT id, last_script_number FROM programas.db_updates");
