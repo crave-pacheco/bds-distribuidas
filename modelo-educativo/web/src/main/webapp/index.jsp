@@ -1,6 +1,7 @@
 <html>
     <body>
-        <h2>Hello World!</h2>
-        <a href="area-general/area-general.jsp">Area general</a>
+        <h2>Modelo educativo</h2>
+        <a href="area-general/area-general.jsp">Area general</a><br/>
+        <a href="programa/programa.jsp">Programa</a>
     </body>
 </html>

@@ -1,14 +1,25 @@
 package itesm.mx.model;
 
+import java.util.UUID;
+
 public class AreaGeneral {
 
-    private String name;
+    private String _nombre;
+    private UUID _id;
 
     public String getNombre() {
-        return name;
+        return _nombre;
     }
 
     public void setNombre(String name) {
-        this.name = name;
+        this._nombre = name;
+    }
+
+    public UUID getId() {
+        return _id;
+    }
+
+    public void setId(UUID id) {
+        _id = id;
     }
 }
